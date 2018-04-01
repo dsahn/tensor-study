@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*- 
 # 텐서플로우의 기본적인 구성을 익힙니다.
 import tensorflow as tf
 
