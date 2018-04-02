@@ -12,6 +12,7 @@
 
 ### venv로 진행해보자
  - http://crystalcube.co.kr/189
+ - python2 에서 tensorflow 깔아도 잘 되는듯..
 
 ## 인코딩 문제
 ```
@@ -19,3 +20,10 @@
 추가
 ```
 
+## pip 설치한것들
+- tensorflow
+- numpy : 수치계산 라이브러리
+- matplotlib : 그래프 출력 라이브러리
+- pillow : 이미지 처리 라이브러리
+
+jupyter는 안써요..
