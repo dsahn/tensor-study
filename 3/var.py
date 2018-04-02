@@ -26,7 +26,9 @@ print(sess.run(W))
 print("=== b ===")
 print(sess.run(b))
 print("=== expr ===")
-print(sess.run(expr, feed_dict={X:x_data})) #what?? 
+print(sess.run(expr, feed_dict={X:x_data})) 
+#what?? 
+# feed_dict assigns to placeholder with value X=x_data
 
 
 sess.close()
