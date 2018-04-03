@@ -9,7 +9,7 @@ y_data = [1, 2, 3]
 W = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
 b = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
 
-# placeholoder
+# placeholder
 X = tf.placeholder(tf.float32, name="X")
 Y = tf.placeholder(tf.float32, name="Y")
 
@@ -29,6 +29,7 @@ cost = tf.reduce_mean(tf.square(hypo - Y))
 # 최적화 함수 : w,b값을 변경해가면서 손실을 최소화하는 함수
 # 기울기가 낮은쪽으로 계속 이동시키면서 최적의 해를 찾음
 # learning_rate : 학습률. 얼마나 급격하게 이동시킬지. hyperparameter
+# NOTE ?? : optimizer.compute_gradients??
 optimizer = tf.train.GradientDescentOptimizer(learning_rate = 0.1)
 train_op = optimizer.minimize(cost) # cost를 최소화 시키자!
 
