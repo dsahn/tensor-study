@@ -71,6 +71,7 @@ for step in range(2001):
         print("Prediction: ")
         print(hy_val)
 
+# 각각의 shape 를 확인해보자
 print(sess.run(tf.shape(x_data)))
 print(sess.run(tf.shape(W)))
 print(sess.run(tf.shape(hypothesis), feed_dict={X:x_data}))
